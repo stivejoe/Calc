@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Titulo de baixo</h1>
+
+    <button onclick="adição()">+</button>
+    <button onclick="subtração()">-</button>
+    <button onclick="multiplicação()">*</button>
+    <button onclick="divisão()">/</button>
+
+    <div id="output"></div>
+    <script>
+      var n1 = prompt("digite um numero");
+      n1 = parseFloat(n1);
+
+      escreve();
+
+      function escreve() {
+        var output = document.querySelector("#output");
+        output.innerHTML = n1;
+      }
+
+      function adição() {
+        var n2 = prompt("digite outro numero");
+        n2 = parseFloat(n2);
+        n1 = n1 + n2;
+        escreve();
+      }
+
+      function subtração() {
+        var n3 = prompt("digite outro numero");
+        n3 = parseFloat(n3);
+        n1 = n1 - n3;
+        escreve();
+      }
+
+      function multiplicação() {
+        var n4 = prompt("digite outro numero");
+        n4 = parseFloat(n4);
+        n1 = n1 * n4;
+        escreve();
+      }
+
+      function divisão() {
+        var n5 = prompt("digite outro numero");
+        n5 = parseFloat(n5);
+        n1 = n1 / n5;
+        escreve();
+      }
+    </script>
+  </body>
+</html>
